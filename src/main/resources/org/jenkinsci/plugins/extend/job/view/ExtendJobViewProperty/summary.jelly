@@ -1,0 +1,10 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+  <!-- TODO: Use of properties (translation) -->
+  <!-- TODO: Use of optionalBlock to keep standard -->
+  <j:if test="${it.extendedInformation}">
+    <j:if test="${it.customWorkspace!=null}">
+      <div><l:icon class="warning" tooltip="${%customWorkspaceWarning}" title="${%customWorkspaceWarning}"/>${%Workspace}: ${it.customWorkspace}</div>
+    </j:if>
+  </j:if>
+</j:jelly>

@@ -1,0 +1,9 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+  <!-- TODO: Use of properties (translation) -->
+  <f:section title="Extend job view configuration">  
+    <f:entry title="Show extended information" field="extendedInformation">
+      <f:checkbox />
+    </f:entry>
+  </f:section>
+</j:jelly>
